@@ -30,7 +30,7 @@ VUE_APP_API="http://localhost:7071/api"
 ## Setting up
 * Complete steps in requirements first
 * Push this code to your own GitHub repository.
-* Create a static web app from that GitHub repository in the Azure Portal > Static Web Apps, see [here](https://docs.microsoft.com/en-us/azure/static-web-apps/get-started-portal?tabs=vanilla-javascript) for a quickstart. **IMPORTANT**: This step will generate your CI/CD, so once finished, `git pull` changes locally.
+* Create a static web app from that GitHub repository in the Azure Portal > Static Web Apps, see [here](https://docs.microsoft.com/en-us/azure/static-web-apps/get-started-portal) for a quickstart. **IMPORTANT**: This step will generate your CI/CD, so once finished, `git pull` changes locally.
 * Since an API endpoint is already configured, you need to create a Storage Account yourself, easiest is using the Azure Portal > Storage Accounts > Create, see [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal) for help.
 * Copy your Storage Account Access key (navigate to your Storage Account > Access keys > Show Keys > Copy connection string of key1)
 * Go to `local.settings.json` and paste this connection string as value for `example_STORAGE`.
@@ -45,12 +45,13 @@ VUE_APP_API="http://localhost:7071/api"
 One of the beautiful things of Azure SWA with GitHub, is that it uses GitHub actions for CI/CD. This means that whenever a change is made to your main branch, it will automatically be pushed to your web app!
 
 ## Resources
-* A blog with more details about this setup
-* More on Azure Static Web Apps
-* More on Function Apps
+* A blog with more details about this boilerplate & setup [here](https://medium.com/@bastiaanrudolf/create-an-azure-static-web-app-with-vue3-tailwindcss-v3-and-python-function-apps-7d4be3d408f6)
+* More on [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/get-started-portal)
+* More on [Function Apps](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+* More on [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
 
 
-If you like this boilerplate, and want to be notified when I create more of these, follow me on Twitter! 
+If you like this boilerplate, or have any questions, find me Twitter!
 [@bignonotation](https://twitter.com/bignonotation)
 
 If you loved it, and want to buy me a coffee:<br>
