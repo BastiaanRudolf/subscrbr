@@ -1,0 +1,12 @@
+{
+    "auth": {
+      "identityProviders": {
+        "twitter": {
+          "registration": {
+            "consumerKeySettingName": "TWITTER_CONSUMER_KEY",
+            "consumerSecretSettingName": "TWITTER_CONSUMER_SECRET"
+          }
+        }
+      }
+    }
+  }
