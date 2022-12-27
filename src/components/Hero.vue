@@ -3,14 +3,14 @@
     <div class="container mx-auto pt-40 lg:pt-52 2xl:pt-64 pb-16 lg:pb-20 xl:pb-28 2xl:pb-52 flex flex-col px-5 py-24 justify-center items-center max-w-7xl">
         <div class="w-full md:w-2/3 flex flex-col mb-6 text-center">
             <!-- Header text -->
-            <h1 class="title-font tracking-tight font-extrabold text-2xl xs:text-3xl lg:text-4xl 2xl:text-6xl mb-4 text-gray-800">efefefefefefef Emails <span style="color: #6666FF;">Made Easy</span></h1>
+            <h1 class="title-font tracking-tight font-extrabold text-2xl xs:text-3xl lg:text-4xl 2xl:text-6xl mb-4 text-gray-800">Immobilien Exposés <span style="color: #6666FF;">mit AI</span></h1>
             
             <!-- Sub text -->
             <p class="mb-8 leading-relaxed text-xs sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl">
-                TESTETETStrgrgrg and earrrrrrsily collect & store emailaddresses with an Azure Static Web App.
+                Wir automatisieren Ihr Immobilienexposé. Nie wieder nervige Texte schreiben.
                 <br>
                 <br>
-                Try it orrrffffrrrut now. 👇
+                Probiere es jetzt. 👇
             </p>
 
             <!-- Form with button -->
