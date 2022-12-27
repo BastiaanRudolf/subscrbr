@@ -37,7 +37,7 @@ def main(req: func.HttpRequest, outputTable: func.Out[str]) -> func.HttpResponse
         )
 
         return func.HttpResponse(
-            f"Subscribed with {openai.toString()}!",
+            f"Subscribed with {email}!",
             status_code=201
         )
     else:
