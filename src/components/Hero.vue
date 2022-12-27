@@ -28,7 +28,8 @@
       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
         Dein Input
       </label>
-      <input class="h-40 w-60 appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="80qm, 4 Zimmer, Wohnung, mit Stellplatz" value="80qm, 4 Zimmer, Wohnung, mit Stellplatz">
+      <input               v-model="rawtext"
+ class="h-40 w-60 appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="80qm, 4 Zimmer, Wohnung, mit Stellplatz" value="80qm, 4 Zimmer, Wohnung, mit Stellplatz">
       <p class="text-red-500 text-xs italic">Fülle dies aus!</p>
     </div>
     <div class="w-full md:w-1/2 px-3">
@@ -38,7 +39,15 @@
       <input class="h-40 w-60 appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Klicke auf den Button!">
     </div>
   </div>
- 
+  <button
+            id="heroEmailSubscribe"
+            @click="subscribeEmail"
+            type="button"
+            style="background: #6666FF;"
+            class="flex-wrap relative my-auto disabled:opacity-50 text-sm xl:text-xl text-white justify-start rounded-full py-2 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:shadow-xl hover:scale-105 duration-300 ease-in-out"
+          >
+            Erstelle das Exposé
+          </button>
   
 </form>
 
@@ -57,15 +66,7 @@
               class="w-full bg-opacity-50 rounded placeholder-gray-600 placeholder-opacity-50 focus:ring-2 focus:bg-transparent border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
-          <button
-            id="heroEmailSubscribe"
-            @click="subscribeEmail"
-            type="button"
-            style="background: #6666FF;"
-            class="flex-wrap relative my-auto disabled:opacity-50 text-sm xl:text-xl text-white justify-start rounded-full py-2 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:shadow-xl hover:scale-105 duration-300 ease-in-out"
-          >
-            Erstelle das Exposé
-          </button>
+        
         </div>
 
         <div
@@ -382,7 +383,7 @@ export default {
   methods: {
     ...mapActions(["subscribe"]),
     subscribeEmail: function() {
-      this.subscribe(this.oart);
+      this.subscribe(this.rawtext);
     },
   },
   watch: {
