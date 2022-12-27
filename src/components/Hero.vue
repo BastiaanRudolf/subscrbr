@@ -7,7 +7,7 @@
             
             <!-- Sub text -->
             <p class="mb-8 leading-relaxed text-xs sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl">
-                Quickly and easily collect & store emailaddresses with an Azure Static Web App.
+                TESTETETSt and easily collect & store emailaddresses with an Azure Static Web App.
                 <br>
                 <br>
                 Try it out now. 👇
