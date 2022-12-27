@@ -29,7 +29,7 @@
         <img class="hidden md:flex md:object-scale-down md:my-auto md:h-20 md:cursor-pointer" @click="$router.push('/')" src="../assets/imgs/logo.webp" alt="" />
 
         <!-- Nav -->
-        <button type="button" @click="$router.push('/features')" class="mt-1 block px-5 py-4 text-xl rounded md:mt-0 md:ml-2 transform transition hover:scale-105 duration-200 ease-in-out">Features</button>
+        <button type="button" @click="$router.push('/features')" class="mt-1 block px-5 py-4 text-xl rounded md:mt-0 md:ml-2 transform transition hover:scale-105 duration-200 ease-in-out">Expose</button>
     </nav>
   </nav>
 </template>

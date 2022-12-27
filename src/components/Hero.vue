@@ -30,6 +30,100 @@
             </div>
         </div>
     </div>
+
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
+    <div class="navigation-wrap">
+      <a href="index.html" aria-current="page" class="logo-link w-nav-brand w--current"><img src="images/business-logo2x.png" width="108" alt="" class="logo-image"></a>
+      <div class="menu">
+        <nav role="navigation" class="navigation-items w-nav-menu">
+          <a href="index.html" aria-current="page" class="navigation-item w-nav-link w--current">Home</a>
+        </nav>
+        <div class="menu-button w-nav-button"><img src="images/menu-icon_1menu-icon.png" width="22" alt="" class="menu-icon"></div>
+      </div>
+      <a href="#Big-Form" class="button cc-contact-us w-inline-block">
+        <div>Jetzt testen</div>
+      </a>
+    </div>
+  </div>
+  <div id="Demo" class="section cc-store-home-wrap">
+    <div class="intro-header">
+      <div class="intro-content cc-homepage">
+        <div class="intro-text">
+          <div class="heading-jumbo">Automatische Immobilien Beschreibung</div>
+          <div class="paragraph-bigger cc-bigger-white-light">Wir automatisieren Ihr Immobilienexposé. Nie wieder nervige Texte schreiben.<br></div>
+        </div>
+        <a href="#Big-Form" class="button cc-jumbo-button cc-jumbo-white w-inline-block">
+          <div>Mehr erfahren</div>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="home-content-wrap">
+        <div class="div-block-2">
+          <div class="div-block">
+            <div class="home-section-wrap">
+              <div>
+                <div class="label cc-light">Immobilien Beschreibung</div>
+                <h2 class="section-heading">Automatisiere deine Objekt Beschreibung</h2>
+                <p class="paragraph-light">Fülle Die Parameter aus und bekomme eine vollwertige Objektbeschreibung deiner Immobilie.</p>
+              </div>
+            </div>
+          </div>
+          <div id="Big-Form" class="form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" method="get"><select id="Objektart" name="field" data-name="Field" class="w-select">
+                <option value="Wohnung">Wohnung</option>
+                <option value="Einfamilienhaus">Einfamilienhaus</option>
+                <option value="Doppelhaushälfte">Doppelhaushälfte</option>
+              </select><select id="Erwerb-2" name="Erwerb" data-name="Erwerb" class="w-select">
+                <option value="Zum Kauf">Zum Kauf</option>
+                <option value="Zur Miete">Zur Miete</option>
+              </select><input type="number" class="w-input" maxlength="256" name="Gr-e" data-name="Größe" placeholder="Größe (qm^2)" id="Groe-e"><input type="number" class="w-input" maxlength="256" name="B-der" data-name="Bäder" placeholder="Bäder" id="Baeder" required=""><input type="number" class="w-input" maxlength="256" name="Zimmer" data-name="Zimmer" placeholder="Zimmer" id="Zimmer-2" required=""><input type="number" class="w-input" maxlength="256" name="Stockwerk" data-name="Stockwerk" placeholder="Stockwerk" id="Stockwerk-2" required=""><input type="number" class="w-input" maxlength="256" name="Preis" data-name="Preis" placeholder="Preis" id="Preis-2" required=""><input type="number" class="w-input" maxlength="256" name="Baujahr" data-name="Baujahr" placeholder="Baujahr" id="Baujahr-2" required=""><input type="number" class="w-input" maxlength="256" name="Renovierung" data-name="Renovierung" placeholder="Letzte Renovierung" id="Renovierung-2" required=""><input type="text" class="w-input" maxlength="256" name="Stadt" data-name="Stadt" placeholder="Stadt" id="Stadt" required=""><label class="w-radio"><input type="radio" id="Keller" name="Keller" value="Keller" data-name="Keller" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Keller">Keller</span></label><label class="w-radio"><input type="radio" id="Garten" name="Garten" value="Garten" data-name="Garten" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Garten">Garten</span></label><label class="w-radio"><input type="radio" id="Balkon" name="Balkon" value="Balkon" data-name="Balkon" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Balkon">Balkon</span></label><input type="submit" value="Submit" data-wait="Please wait..." class="w-button"></form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="motto-wrap">
+        <div class="heading-jumbo-small">Hier erscheint gleich Ihre Objekt Beschreibung.</div>
+      </div>
+      <div class="divider"></div>
+      <div class="about-story-wrap">
+        <p id="Text-Output" class="text-output">Füllen Sie die obigen Felder aus und wir erstellen hier ihre einzigartige Immobilien Beschreibung - kostenlos.</p>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <div class="section cc-cta">
+    <div class="container">
+      <div class="cta-wrap">
+        <div>
+          <div class="cta-text">
+            <div class="heading-jumbo-small">Automatisiere dein Exopsé.<br></div>
+            <div class="paragraph-bigger cc-bigger-light">Today is the day to build the business of your dreams. Share your mission with the world — and blow your customers away.<br></div>
+          </div>
+          <a href="#Big-Form" class="button cc-jumbo-button w-inline-block">
+            <div>Jetzt texten</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="footer-wrap">
+        <a href="#" target="_blank" class="webflow-link w-inline-block">
+          <div class="paragraph-tiny">Powered by Angelos &amp; Tom</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  
 </template>
 <script>
 import { mapGetters, mapActions } from 'vuex'
