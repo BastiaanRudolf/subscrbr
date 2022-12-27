@@ -43,7 +43,7 @@
             style="background: #6666FF;"
             class="flex-wrap relative my-auto disabled:opacity-50 text-sm xl:text-xl text-white justify-start rounded-full py-2 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:shadow-xl hover:scale-105 duration-300 ease-in-out"
           >
-            Subscribe
+            Erstelle das Exposé
           </button>
         </div>
 
