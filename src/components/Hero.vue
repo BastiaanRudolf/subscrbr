@@ -24,6 +24,23 @@
                     <button id="heroEmailSubscribe" @click="subscribeEmail" type="button" style="background: #6666FF;" class="flex-wrap relative my-auto disabled:opacity-50 text-sm xl:text-xl text-white justify-start rounded-full py-2 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:shadow-xl hover:scale-105 duration-300 ease-in-out">Subscribe</button>
                 </div>
                 
+                <div id="Big-Form" class="form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" method="get"><select id="Objektart" name="field" data-name="Field" class="w-select">
+                <option value="Wohnung">Wohnung</option>
+                <option value="Einfamilienhaus">Einfamilienhaus</option>
+                <option value="Doppelhaushälfte">Doppelhaushälfte</option>
+              </select><select id="Erwerb-2" name="Erwerb" data-name="Erwerb" class="w-select">
+                <option value="Zum Kauf">Zum Kauf</option>
+                <option value="Zur Miete">Zur Miete</option>
+              </select><input type="number" class="w-input" maxlength="256" name="Gr-e" data-name="Größe" placeholder="Größe (qm^2)" id="Groe-e"><input type="number" class="w-input" maxlength="256" name="B-der" data-name="Bäder" placeholder="Bäder" id="Baeder" required=""><input type="number" class="w-input" maxlength="256" name="Zimmer" data-name="Zimmer" placeholder="Zimmer" id="Zimmer-2" required=""><input type="number" class="w-input" maxlength="256" name="Stockwerk" data-name="Stockwerk" placeholder="Stockwerk" id="Stockwerk-2" required=""><input type="number" class="w-input" maxlength="256" name="Preis" data-name="Preis" placeholder="Preis" id="Preis-2" required=""><input type="number" class="w-input" maxlength="256" name="Baujahr" data-name="Baujahr" placeholder="Baujahr" id="Baujahr-2" required=""><input type="number" class="w-input" maxlength="256" name="Renovierung" data-name="Renovierung" placeholder="Letzte Renovierung" id="Renovierung-2" required=""><input type="text" class="w-input" maxlength="256" name="Stadt" data-name="Stadt" placeholder="Stadt" id="Stadt" required=""><label class="w-radio"><input type="radio" id="Keller" name="Keller" value="Keller" data-name="Keller" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Keller">Keller</span></label><label class="w-radio"><input type="radio" id="Garten" name="Garten" value="Garten" data-name="Garten" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Garten">Garten</span></label><label class="w-radio"><input type="radio" id="Balkon" name="Balkon" value="Balkon" data-name="Balkon" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Balkon">Balkon</span></label><input type="submit" value="Submit" data-wait="Please wait..." class="w-button"></form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+                
                 <!-- Response messages -->
                 <p v-if="responseType === 'error'" class="text-xs text-red-500 mt-6 ml-1"> ❌ {{this.$store.state.responseMessage}} </p>
                 <p v-if="responseType === 'success'" class="text-xs text-green-500 mt-6 ml-1"> ✅ {{this.$store.state.responseMessage}} </p>
@@ -69,22 +86,7 @@
               </div>
             </div>
           </div>
-          <div id="Big-Form" class="form-block w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" method="get"><select id="Objektart" name="field" data-name="Field" class="w-select">
-                <option value="Wohnung">Wohnung</option>
-                <option value="Einfamilienhaus">Einfamilienhaus</option>
-                <option value="Doppelhaushälfte">Doppelhaushälfte</option>
-              </select><select id="Erwerb-2" name="Erwerb" data-name="Erwerb" class="w-select">
-                <option value="Zum Kauf">Zum Kauf</option>
-                <option value="Zur Miete">Zur Miete</option>
-              </select><input type="number" class="w-input" maxlength="256" name="Gr-e" data-name="Größe" placeholder="Größe (qm^2)" id="Groe-e"><input type="number" class="w-input" maxlength="256" name="B-der" data-name="Bäder" placeholder="Bäder" id="Baeder" required=""><input type="number" class="w-input" maxlength="256" name="Zimmer" data-name="Zimmer" placeholder="Zimmer" id="Zimmer-2" required=""><input type="number" class="w-input" maxlength="256" name="Stockwerk" data-name="Stockwerk" placeholder="Stockwerk" id="Stockwerk-2" required=""><input type="number" class="w-input" maxlength="256" name="Preis" data-name="Preis" placeholder="Preis" id="Preis-2" required=""><input type="number" class="w-input" maxlength="256" name="Baujahr" data-name="Baujahr" placeholder="Baujahr" id="Baujahr-2" required=""><input type="number" class="w-input" maxlength="256" name="Renovierung" data-name="Renovierung" placeholder="Letzte Renovierung" id="Renovierung-2" required=""><input type="text" class="w-input" maxlength="256" name="Stadt" data-name="Stadt" placeholder="Stadt" id="Stadt" required=""><label class="w-radio"><input type="radio" id="Keller" name="Keller" value="Keller" data-name="Keller" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Keller">Keller</span></label><label class="w-radio"><input type="radio" id="Garten" name="Garten" value="Garten" data-name="Garten" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Garten">Garten</span></label><label class="w-radio"><input type="radio" id="Balkon" name="Balkon" value="Balkon" data-name="Balkon" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Balkon">Balkon</span></label><input type="submit" value="Submit" data-wait="Please wait..." class="w-button"></form>
-            <div class="w-form-done">
-              <div>Thank you! Your submission has been received!</div>
-            </div>
-            <div class="w-form-fail">
-              <div>Oops! Something went wrong while submitting the form.</div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
