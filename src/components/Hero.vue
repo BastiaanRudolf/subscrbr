@@ -60,6 +60,7 @@
           >
             <select
               id="Objektart"
+              v-model="oart"
               name="field"
               data-name="Field"
               class="w-full bg-opacity-50 rounded placeholder-gray-600 placeholder-opacity-50 focus:ring-2 focus:bg-transparent border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -345,7 +346,7 @@ export default {
     return {
       // This is the local version of the email,
       // this is mounted to the input
-      email: "",
+      oart: "",
     };
   },
   computed: {
@@ -360,7 +361,7 @@ export default {
   methods: {
     ...mapActions(["subscribe"]),
     subscribeEmail: function() {
-      this.subscribe(this.email);
+      this.subscribe(this.oart);
     },
   },
   watch: {
