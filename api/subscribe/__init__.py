@@ -9,8 +9,6 @@ import openai
 
 
 
-
-
 def main(req: func.HttpRequest, outputTable: func.Out[str]) -> func.HttpResponse:
     logging.info('createPage HTTP trigger function processed a request.')
 
