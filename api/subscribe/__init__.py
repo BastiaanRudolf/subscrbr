@@ -4,8 +4,8 @@ import json
 import azure.functions as func
 
 
-import os
-import openai
+# import os
+# import openai
 
 
 
