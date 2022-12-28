@@ -13,7 +13,7 @@ def main(req: func.HttpRequest, outputTable: func.Out[str]) -> func.HttpResponse
 
     email = req.params.get('emailaddress')
     rowKey = str(uuid.uuid4())
-
+    res = "start"
     if email:
         data = {
             "emailaddress": f"{email}",
