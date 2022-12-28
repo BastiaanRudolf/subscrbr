@@ -26,7 +26,7 @@ def main(req: func.HttpRequest, outputTable: func.Out[str]) -> func.HttpResponse
         outputTable.set(json.dumps(data))
         
         try:
-            openai.api_key = "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"
+            openai.api_key = "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"
             response = openai.Completion.create(
             model="text-davinci-003",
             prompt="Schreibe ein expose for eine 40qm wohnung in Köln mit Garage",
