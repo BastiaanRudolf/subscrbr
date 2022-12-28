@@ -25,16 +25,18 @@ def main(req: func.HttpRequest, outputTable: func.Out[str]) -> func.HttpResponse
 
         outputTable.set(json.dumps(data))
         
-        # openai.api_key = "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"
-        # openai.Completion.create(
-        # model="text-davinci-003",
-        # prompt="Schreibe ein expose for eine 40qm wohnung in Köln mit Garage",
-        # max_tokens=7,
-        # temperature=0
-        # )
+        try:
+            openai.api_key = "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"
+            openai.Completion.create(
+            model="text-davinci-003",
+            prompt="Schreibe ein expose for eine 40qm wohnung in Köln mit Garage",
+            max_tokens=7,
+            temperature=0
+            )
+        except: errorAI = "klappt nicht"
 
         return func.HttpResponse(
-            f"Subscribed with {email}!",
+            f"Subscribed with {errorAI}!",
             status_code=201
         )
     else:
